@@ -9,12 +9,21 @@ namespace LogBook.VO
     public class Student
     {
         // Classe é um conjunto de objetos
-        public int id { get; set; }
-        public string studentName { get; set; }
-        public string miniCurriculum { get; set; }
-        public string hobby { get; set; }
-        public string ar { get; set; }
-        public string classCode { get; set; }
+        private int id { get; set; } //set atribui e get recupera
+        private string studentName { get; set; }
+        private string miniCurriculum { get; set; }
+        private string hobby { get; set; }
+        private string ar { get; set; }
+        private string classCode { get; set; }
         
+        public void setId(int id)
+        {
+            this .id = id;
+        }
+        public int GetId()
+        {
+            return this .id;
+        }
+
     }
 }
